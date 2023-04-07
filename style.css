@@ -1,0 +1,92 @@
+/* Reset styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+/* Global styles */
+a {
+    color: #0077FF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+#header {
+    background-color: #111;
+    color: #FFF;
+    padding: 10px 20px;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+/* Logo styles */
+#logo {
+    font-size: 2rem;
+    margin: 0;
+}
+
+#logo a {
+    color: #0077FF;
+}
+
+/* Navigation styles */
+#index {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#breadcrumbs {
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+.breadcrumbs a {
+    color: #777;
+}
+
+/* Content styles */
+.markdown-body {
+    font-size: 1rem;
+    color: #333;
+}
+
+hr {
+    margin: 40px 0;
+    border: none;
+    border-top: 1px solid #EEE;
+}
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    #header {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    #logo {
+        font-size: 1.5rem;
+    }
+}
