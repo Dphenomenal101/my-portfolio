@@ -1,92 +1,128 @@
-/* Reset styles */
-html, body {
-    margin: 0;
-    padding: 0;
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    line-height: 1.5;
-    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #1f1f1f;
 }
 
-/* Global styles */
 a {
-    color: #0077FF;
+    color: #fff;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #1ac9ff;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header styles */
+/* Header */
 #header {
-    background-color: #111;
-    color: #FFF;
-    padding: 10px 20px;
-    text-align: right;
-    font-size: 0.8rem;
+    background-color: #000;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
 }
 
-/* Logo styles */
 #logo {
-    font-size: 2rem;
+    font-size: 28px;
+    font-weight: bold;
     margin: 0;
+    padding: 0;
 }
 
 #logo a {
-    color: #0077FF;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
 }
 
-/* Navigation styles */
-#index {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+/* Navigation */
+nav#breadcrumbs {
+    margin: 20px 0;
+    font-size: 18px;
 }
 
-#breadcrumbs {
-    font-size: 0.8rem;
-    margin-bottom: 20px;
+nav#breadcrumbs a {
+    color: #1ac9ff;
 }
 
-.breadcrumbs a {
-    color: #777;
+nav#breadcrumbs a:hover {
+    text-decoration: underline;
 }
 
-/* Content styles */
+nav#breadcrumbs span {
+    color: #fff;
+    margin: 0 5px;
+}
+
+/* Content */
+#content {
+    margin-top: 100px;
+}
+
 .markdown-body {
-    font-size: 1rem;
-    color: #333;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-hr {
-    margin: 40px 0;
-    border: none;
-    border-top: 1px solid #EEE;
+.markdown-body p {
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
-/* Media queries */
-@media only screen and (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
+.markdown-body img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
-    #header {
-        text-align: center;
-        font-size: 1rem;
-    }
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
 
+/* Media Queries */
+@media screen and (max-width: 768px) {
     #logo {
-        font-size: 1.5rem;
+        font-size: 24px;
+    }
+
+    #logo a {
+        height: 40px;
+        line-height: 40px;
+    }
+
+    nav#breadcrumbs {
+        font-size: 16px;
+    }
+
+    .markdown-body {
+        padding: 30px 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #logo {
+        font-size: 20px;
+    }
+
+    #logo a {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    nav#breadcrumbs {
+        font-size: 14px;
     }
 }
