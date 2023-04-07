@@ -137,4 +137,15 @@ nav#breadcrumbs span:last-child {
     margin-bottom: 1.5rem;
   }
 
-
+.avatar {
+  width: 150px;
+  height: 150px;
+  margin-right: 2rem;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #00a9e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
