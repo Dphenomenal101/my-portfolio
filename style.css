@@ -1,5 +1,5 @@
 /* Reset */
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, ol, li, nav, header, section, article, aside, footer, table, td, th, tr, tbody, thead, tfoot, form, label, input, textarea, button {
+html, body, div, span, h1, p, a, img, header {
   margin: 0;
   padding: 0;
   border: 0;
@@ -70,40 +70,9 @@ hr {
   margin: 2rem 0;
 }
 
-/* Index navigation */
-nav#index {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-}
-
-nav#index a {
-  color: #e0e0e0;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-left: 1rem;
-}
-
 /* Breadcrumbs */
 nav#breadcrumbs {
   margin-bottom: 1rem;
-}
-
-nav#breadcrumbs a {
-  color: #e0e0e0;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-right: 0.5rem;
-}
-
-nav#breadcrumbs a:hover {
-  color: #00a9e0;
-  text-decoration: none;
-}
-
-nav#breadcrumbs span:last-child {
-  color: #808080;
-  font-weight: normal;
 }
 
 /* Header */
