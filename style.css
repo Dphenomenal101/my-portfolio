@@ -44,6 +44,7 @@ a:hover {
   width: 150px;
   height: 150px;
   margin-right: 2rem;
+  margin-top: 2.5rem;
   overflow: hidden;
   border-radius: 50%;
   box-shadow: 0 0 0 3px #00a9e0;
@@ -124,4 +125,3 @@ font-size: 24px;
   justify-content: center;
   margin-top: 0.5rem;
 }
-
